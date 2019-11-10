@@ -1,9 +1,26 @@
+body {
+	background-image: url("pictures/robot_wallpaper.jpg");
+}
+
 h1 {
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
+	font-size: 4em;
+	font-weight: bold;
+	background: -webkit-linear-gradient( rgba(169, 221, 235, 0.8), rgb(162, 63, 165) );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.learning {
+	display: flex;
+	justify-content: space-between;
 }
 
 .robots {
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
 }
 
 .head, 
@@ -12,19 +29,19 @@ h1 {
 .right_arm, 
 .left_leg, 
 .right_leg {
-	 background: linear-gradient(to bottom, rgb(61, 200, 235), rgb(236, 145, 145));
+	background: linear-gradient(to bottom, rgb(61, 200, 235), rgb(236, 145, 145));
 }
 
 .head { 
 	width: 200px; 
-	margin: 0 auto; 
+	margin: 0 auto;
 	height: 150px; 
 	border-radius: 200px 200px 0 0; 
 	margin-bottom: 10px;
-} 
+}
 
 .eyes {
-	
+	display: flex
 }
 
 .head:hover {
@@ -33,12 +50,22 @@ h1 {
 	box-shadow: 10px 10px 80px aqua;
 }
 
+.html {
+	text-align: left;
+	font-size: 4em;
+	margin-left: 200px;
+}
+
+.css {
+	text-align: right;
+	font-size: 4em;
+	margin-right: 200px;
+}
+
 .upper_body { 
 	width: 300px; 
 	height: 150px;
 	display: flex;
-	justify-content: center;
-	margin: 0 auto;
 } 
 
 .left_arm, .right_arm { 
@@ -54,7 +81,7 @@ h1 {
 } 
 
 .left_arm:hover {
-	transform: rotate(-120deg);
+	transform: rotate(110deg);
 }
 
 .right_arm { 
@@ -62,7 +89,7 @@ h1 {
 } 
 
 .right_arm:hover{
-	transform: rotate(120deg);
+	transform: rotate(-110deg);
 }
 
 .torso { 
@@ -76,6 +103,7 @@ h1 {
 	height: 200px;
 	/* This is another useful property. Hmm what do you think it does?*/
 	margin: 0 auto;
+	display: flex;
 
 } 
 
@@ -83,6 +111,7 @@ h1 {
 	width: 40px; 
 	height: 120px;
 	border-radius: 0 0 100px 100px; 
+	margin-top: 49px;
 } 
 
 .left_leg { 
@@ -90,8 +119,7 @@ h1 {
 }
 
 .right_leg { 
-	margin-left: 120px;
-	margin-top: -120px; 
+	margin-left: 30px;
 }
 
 .left_eye, .right_eye { 
@@ -111,8 +139,8 @@ h1 {
 
 .right_eye { 
 	position: relative; 
-	top: 80px; 
-	left: 140px; 
+	top: 100px; 
+	left: 120px; 
 }
 
 
