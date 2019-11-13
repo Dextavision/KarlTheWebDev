@@ -4,10 +4,25 @@ body {
 
 h1 {
 	text-align: center;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto Mono', monospace , sans-serif;
 	font-size: 4em;
 	font-weight: bold;
 	background: -webkit-linear-gradient( rgba(169, 221, 235, 0.8), rgb(162, 63, 165) );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+button {
+	display: flex;
+	margin: 0 auto;
+	font-family: 'Roboto Mono', monospace , sans-serif;
+	border-radius: 20px;
+	background: -webkit-linear-gradient( rgba(212, 16, 16, 0.8), rgb(39, 3, 241) );
+}
+
+#helloJavascript {
+	font-size: 1em;
+	background: -webkit-linear-gradient( rgba(212, 193, 16, 0.8), rgb(73, 199, 90) );
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
